@@ -6,19 +6,20 @@ import { defineConfig } from 'eslint/config'
 import globals from 'globals'
 
 export default defineConfig([
-    {
-        files: ['**/*.{js,mjs,cjs,jsx}'],
-        plugins: { js },
-        extends: ['js/recommended'],
-        languageOptions: { globals: globals.browser },
-    },
-    pluginReact.configs.flat.recommended,
-    prettierConfig,
+  {
+    files: ['**/*.{js,mjs,cjs,jsx}'],
+    plugins: { js },
+    extends: ['js/recommended'],
+    languageOptions: { globals: globals.browser },
+  },
+  pluginReact.configs.flat.recommended,
+  prettierConfig,
 
-    {
-        plugins: { prettier: prettierPlugin },
-        rules: {
-            'prettier/prettier': 'error',
-        },
+  {
+    plugins: { prettier: prettierPlugin },
+    rules: {
+      'prettier/prettier': 'error',
+      'react/prop-types': 'off',
     },
+  },
 ])
