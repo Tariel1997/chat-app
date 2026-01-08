@@ -1,5 +1,6 @@
 import { Loader } from 'lucide-react'
 import React from 'react'
+import { Toaster } from 'react-hot-toast'
 import { Navigate, Route, Routes } from 'react-router-dom'
 
 import NavBar from './components/NavBar'
@@ -53,6 +54,8 @@ const App = () => {
           element={authUser ? <ProfilePage /> : <Navigate to="/login" />}
         />
       </Routes>
+
+      <Toaster />
     </>
   )
 }
