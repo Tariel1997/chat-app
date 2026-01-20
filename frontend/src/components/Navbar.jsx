@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 import { useAuthStore } from '../store/useAuthStore'
 
-const NavBar = () => {
+const Navbar = () => {
   const { logout, authUser } = useAuthStore()
 
   return (
@@ -58,4 +58,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+export default Navbar

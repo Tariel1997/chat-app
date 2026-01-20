@@ -3,7 +3,7 @@ import React from 'react'
 import { Toaster } from 'react-hot-toast'
 import { Navigate, Route, Routes } from 'react-router-dom'
 
-import NavBar from './components/NavBar'
+import Navbar from './components/Navbar'
 import HomePage from './pages/HomePage'
 import LoginPage from './pages/LoginPage'
 import ProfilePage from './pages/ProfilePage'
@@ -33,7 +33,7 @@ const App = () => {
 
   return (
     <div data-theme={theme} className="min-h-screen">
-      <NavBar />
+      <Navbar />
 
       <Routes>
         <Route
